@@ -23,3 +23,13 @@ body {
   aspect-ratio: 1;
   flex: 1;
 }
+
+@media only screen and (max-width: 760px) {
+  body {
+    align-items: center;
+  }
+  .board {
+    height: auto;
+    width: 100vw;
+  }
+}

@@ -1,4 +1,5 @@
 const boardElement = document.querySelector('.board')
+const inputElement = document.querySelector('#sizeInput')
 
 function createRow(i, length) {
   const row = []
@@ -38,6 +39,12 @@ function render(board) {
   boardElement.innerHTML = boardContent
 }
 
-const board = createBoard(1000)
+function createNew(e) {
+  e.preventDefault()
+  const newBoard = createBoard(inputElement.value)
+  render(newBoard)
+}
+
+const board = createBoard(8)
 
 render(board)

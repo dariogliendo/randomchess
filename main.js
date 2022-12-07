@@ -9,7 +9,7 @@ function createRow(i, length) {
     else row.push('blue')
     iterator++
   }
-  return shuffle(row)
+  return row
 }
 
 function createBoard(length) {
